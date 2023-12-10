@@ -5,70 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disney Characters</title>
 </head>
-    <style>
-        body{
-            font-family:'Times New Roman', Times, serif;
-            font-size:medium;
-            background:linear-gradient(45deg,blue,rgb(56, 118, 184),rgb(119, 187, 210));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 150px;
-        }
-        header{
-            width: 750px;
-        }
-        .kontenti{
-            border: 4px solid rgb(34, 9, 84);
-            width: 500px;
-            height: 560px;
-            margin-top: 120px;
-            border-radius: 8px;
-        }
-        h1{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: xx-large;
-        }
-        p{
-            display: block;
-            margin-bottom: 13px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: medium;
-        }
-        input{
-        padding: 8px;
-        border-radius: 3px;
-        }
-        button{
-        padding: 6px 15px;
-        margin-top: 10px;
-        border: 3px solid rgb(25, 11, 92);
-        border-radius: 5px;
-        }
-        button:hover{
-        background-color: rgb(43, 43, 226);
-        }
-        .login{
-        border: 3px solid rgb(31, 22, 73);
-        width: 150px;
-        padding: 10px;
-        float:right ;
-        border-radius: 5px;
-        }
-        .account{
-        color: white;
-        text-decoration: none;
-
-        }
-        .disney{
-            margin-left: -70px;
-        }
-
- 
-
-     
-    </style>
-</head>
 <body>
     <header>
         <img class="disney" src="f:\SHKI-UBT-Elsa\Semestri 3\Dizajni dhe Zhvillimi i Webit\0dcdc88e9bfadebdd47b8af84c2b8dd1.png" alt="">
@@ -98,58 +34,7 @@
     
     
     </form>
-
- <script>
-     let nameRegex = /^[A-Z][a-z]{2,10}$/;
-     let surnameRegex = /^[A-Z][a-z]{2,10}$/;
-     let usernameRegex = /^.{8,15}$/;
-     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-     let passwordRegex = /^[A-Z].*\d{3}$/;
-     
-
-     function validateForm(){
-         let nameInput = document.getElementById('name');
-         let nameError = document.getElementById('nameError');
-         let surnameInput = document.getElementById('surname');
-         let surnameError = document.getElementById('surnameError');
-         let usernameInput = document.getElementById('username');
-         let usernameError = document.getElementById('usernameError');
-         let emailInput = document.getElementById('email');
-         let emailError = document.getElementById('emailError');
-         let passwordInput = document.getElementById('password');
-         let passwordError = document.getElementById('passwordError');
-
-         nameError.innerText = '';
-         surnameError.innerText = '';
-         usernameError.innerText = '';
-         emailError.innerText = '';
-         passwordError.innerText = '';
-     
-         if(!nameRegex.test(nameInput.value)){
-             nameError.innerText = 'Name is invalid!';
-             return;
-         }
-         if(!surnameRegex.test(surnameInput.value)){
-             surnameError.innerText = 'Surname is invalid!';
-             return;
-         }
-         if(!usernameRegex.test(usernameInput.value)){
-             usernameError.innerText = 'Username is invalid!';
-             return;
-         }
-         if(!emailRegex.test(emailInput.value)){
-             emailError.innerText = 'Email is invalid!';
-             return;
-         }
-         if(!passwordRegex.test(passwordInput.value)){
-             passwordError.innerText = 'Password is invalid!';
-             return;
-         }
-         
-     } 
-
-
- </script>
+    <script src="Create an account.js"></script>
 
 </body>
 </html>
