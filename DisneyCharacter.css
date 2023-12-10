@@ -85,6 +85,12 @@ section{
 .letters{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xxx-large;
+    float: right;
+    margin-right: 60px;
+    margin-top: 50px;
+}
+#boxi{
+    margin-bottom: 17px;
 }
 .emri{
     font-family: Arial, Helvetica, sans-serif;
