@@ -72,6 +72,9 @@ section{
     padding: 0 15px;
     border: 2px solid black;
 }
+.letterbar ul li:hover{
+    background-color: rgb(138, 199, 248);
+}
 .box>div{
     background-color: rgb(154, 192, 246);
     width: 150px;
