@@ -2,9 +2,22 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color:rgb(217, 240, 248);
+    background-color: rgb(181, 203, 242);
 }
-
+.ikonat{
+    display: inline-block;
+    background-color: rgb(59, 124, 204);
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid blue;
+}
+.ikonat i{
+    color: black;
+    margin-left: 0px;
+    margin-top: 7px;
+}
 header{
     background: linear-gradient(45deg,rgb(105, 145, 230),rgb(29, 84, 187),rgb(26, 26, 157));
     padding: 15px;
@@ -24,18 +37,193 @@ header{
     font-family: 'Times New Roman', Times, serif;
     font-size:larger;
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
     color: white;
+}
+.dashboard:hover{
+    color: rgb(0, 0, 0);
+   
+}
+.dashboard1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:larger;
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+    display: block;
+
+}
+.dashboard1:hover{
+    color: rgb(0, 0, 0);
+}
+.dashboard2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:larger;
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+    display: block;
+}
+.dashboard2:hover{
+    color: rgb(0, 0, 0);
+}
+.dashboard3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:larger;
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+    display: block;
+}
+.dashboard3:hover{
+    color: rgb(0, 0, 0);
+}
+.dashboard4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:larger;
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+    display: block;
+}
+.dashboard4:hover{
+    color: rgb(0, 0, 0);
+}
+.ul{
+    list-style: none;
+    display: inline-block;
+}
+.li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    font-size: small;
+    margin-top: 10px;
+    background-color:rgb(86, 145, 207);
+    box-shadow:0 0 10px rgb(0,0,0, 0.1);
+    border:3px solid blue;
+    padding: 8px;
+    list-style: none;
+    animation: fadeIn 2s forwards;
+
+}
+li:hover .submenu{
+    display: block;
+    place-items: center;
+}
+.submenu1{
+    display: none;
+    position: absolute;
+    font-size: small;
+    margin-top: 10px;
+    background-color:rgb(86, 145, 207);
+    box-shadow:0 0 10px rgb(0,0,0, 0.1);
+    border: 3px solid blue;
+    padding: 8px;
+    list-style: none;
+    animation: fadeIn 2s forwards;
+}
+li:hover .submenu1{
+    display: block;
+}
+.submenu2{
+    display: none;
+    position: absolute;
+    font-size: small;
+    margin-top: 10px;
+    background-color:rgb(86, 145, 207);
+    box-shadow:0 0 10px rgb(0,0,0, 0.1);
+    border: 3px solid blue;
+    padding: 8px;
+    list-style: none;
+    animation: fadeIn 2s forwards;
+}
+li:hover .submenu2{
+    display: block;
+}
+.submenu3{
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    width: 500px;
+    font-size: small;
+    background-color:rgb(86, 145, 207);
+    box-shadow:0 0 10px rgb(0,0,0, 0.1);
+    border: 3px solid blue;
+    padding: 8px;
+    list-style: none;
+    animation: fadeIn 2s forwards;
+}
+li:hover .submenu3{
+    display: block;
+}
+.submenu4{
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    font-size: small;
+    background-color:rgb(86, 145, 207);
+    box-shadow:0 0 10px rgb(0,0,0, 0.1);
+    border: 3px solid blue;
+    padding: 8px;
+    list-style: none;
+    animation: fadeIn 2s forwards;
+}
+li:hover .submenu4{
+    display: block;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 3;
+    }
+}
+#section1{
+    float: left;
 }
 main {
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    background-position: center;
+    background-attachment: fixed;
+}
+#ariel img{
+    opacity: 0;
+    animation: fadeOut 3s forwards;
+}
+@keyframes fadeOut{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 3;
+    }
+}
+.Mickey{
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 20px;
+    animation: Mickey 2s infinite alternate-reverse;
+}
+@keyframes Mickey{
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(360px);
+    }
 }
 h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: xx-large;
     text-align: center;
+    margin-top: -150px;
 }
 .teksti1{
     font-family:'Times New Roman', Times, serif;
@@ -54,10 +242,26 @@ h1{
     font-size: medium;
     margin-top: -5px;
 }
+.Minnie{
+    float: right;
+    width: 97px;
+    margin-top: -185px;
+    margin-right: 20px;
+    animation: Minnie 2s infinite alternate ;
+}
+@keyframes Minnie{
+    0%{
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(-360px);
+    }
+}
 h2{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-large;
     text-align: center;
+    margin-top: -10px;
 }
 section{
     display:block;
@@ -73,7 +277,7 @@ section{
     border: 2px solid black;
 }
 .letterbar ul li:hover{
-    background-color: rgb(138, 199, 248);
+    background-color: rgb(245, 176, 229);
 }
 .box>div{
     background-color: rgb(154, 192, 246);
@@ -84,6 +288,16 @@ section{
     display: inline-block;
     border: 2px solid black;
     text-align: center;
+    animation: boxi 2s infinite alternate;
+}
+@keyframes boxi{
+    0%{
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+    
 }
 .letters{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -101,14 +315,15 @@ section{
 }
 footer{
    background: linear-gradient(45deg,rgb(105, 145, 230),rgb(29, 84, 187),rgb(26, 26, 157)); 
-   padding: 100px;
+   padding: 30px;
 }
-.footeri ul li{
-    display: inline-block;
-    padding: 5px;
-}
-.shkronjat{
+table, th, tr{
+    width: 900px;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
-    text-decoration: none;
-    text-align: left ;
+}
+th:hover{
+    color: rgb(27, 27, 89);
+
 }
