@@ -28,32 +28,41 @@ p{
     font-size: medium;
 }
 input{
-padding: 8px;
-border-radius: 3px;
+    padding: 8px;
+    border-radius: 3px;
 }
 button{
-padding: 6px 15px;
-margin-top: 10px;
-border: 3px solid rgb(25, 11, 92);
-border-radius: 5px;
+    padding: 6px 15px;
+    margin-top: 10px;
+    border: 3px solid rgb(25, 11, 92);
+    border-radius: 5px;
 }
 button:hover{
-background-color: rgb(43, 43, 226);
+    background-color: rgb(43, 43, 226);
 }
 .Click{
-border: 3px solid rgb(31, 22, 73);
-width: 150px;
-padding: 10px;
-float: left;
-border-radius: 5px;
+    border: 3px solid rgb(31, 22, 73);
+    width: 150px;
+    padding: 10px;
+    float: left;
+    border-radius: 5px;
 
 }
 .account{
-color: white;
-text-decoration: none;
+    color: white;
+    text-decoration: none;
 
 }
 .disney{
     margin-left: -70px;
     margin-bottom: -100px;
+    animation: disney 1s infinite alternate;
+}
+@keyframes disney{
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100px);
+    }
 }
