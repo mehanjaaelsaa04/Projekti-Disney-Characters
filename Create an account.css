@@ -54,4 +54,13 @@
         }
         .disney{
             margin-left: -70px;
+            animation: disney 1s infinite alternate;
+        }
+        @keyframes disney{
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(50px);
+            }
         }
