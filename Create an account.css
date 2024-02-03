@@ -1,4 +1,4 @@
-        body{
+  body{
             font-family:'Times New Roman', Times, serif;
             font-size:medium;
             background:linear-gradient(45deg,blue,rgb(56, 118, 184),rgb(119, 187, 210));
@@ -51,6 +51,9 @@
         color: white;
         text-decoration: none;
 
+        }
+        .account:hover{
+            color: blue;
         }
         .disney{
             margin-left: -70px;
