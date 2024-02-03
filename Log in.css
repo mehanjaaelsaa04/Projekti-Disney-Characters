@@ -51,7 +51,9 @@ button:hover{
 .account{
     color: white;
     text-decoration: none;
-
+}
+.account:hover{
+    color: blue;
 }
 .disney{
     margin-left: -70px;
