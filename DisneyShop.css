@@ -173,9 +173,17 @@ li:hover .submenu4{
     display: inline-block;
     border: 2px solid black;
     text-align: center;
-    animation: boxi 3s infinite alternate;
     margin-left: 45px;
     margin-top: 20px;
+    animation: shop 3s infinite alternate-reverse;
+}
+@keyframes shop{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(15px);
+    }
 }
 .txt{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
