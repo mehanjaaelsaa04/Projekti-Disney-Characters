@@ -1,31 +1,52 @@
 <?php
 session_start();
 
-$servername = "logi_host"; 
-$username = "logi_username"; 
-$password = "logi_password"; 
+$servername = "localhost";
+$username = "emehanjaa"; 
+$password = "eeeeeeee"; 
+$dbname = "logini";
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
+
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST["email"];
+    $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $sql = "SELECT * FROM usertable WHERE email='$email' AND password='$password'";
-    $result = $conn->query($sql);
+    
+    $sql = "SELECT * FROM login WHERE username=?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
+   
     if ($result->num_rows == 1) {
-        $_SESSION["user_email"] = $email;
-        header("Location: dashboard.php");
-        exit();
+        $row = $result->fetch_assoc();
+        
+        
+        if (password_verify($password, $row["password"])) {
+           
+            $_SESSION["user_id"] = $row["id"]; 
+            $_SESSION["username"] = $row["username"]; 
+            header("Location: Log in.php");
+            exit();
+        } else {
+            
+            echo "Invalid username or password";
+        }
     } else {
-        $error_message = "Invalid email or password";
+        
+       echo "Invalid username or password";
     }
+
+
+    $stmt->close();
 }
 
 $conn->close();
