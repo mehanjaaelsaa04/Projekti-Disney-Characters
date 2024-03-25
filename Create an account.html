@@ -14,18 +14,20 @@
         <center>
          <div class="kontenti">
             <h1>Create an account</h1>
-             <p>Name:</p>
-             <input type="text" id="name" required>
-             <p>Surname:</p>
-             <input type="text" id="surname" required>
-             <p>Username:</p>
-             <input type="text" id="username" required>
-             <p>Email:</p>
-             <input type="email" id="email" required>
-             <p>Password:</p>
-             <input type="password" id="password" required>
-             <p></p>
-             <button type="submit">Done</button>
+<form method="post" action="Create an account.php">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="surname">Surname:</label><br>
+    <input type="text" id="surname" name="surname"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br>
+    <input type="submit" value="Submit">
+</form>
+
          </div>
          <br>
          <div class="login">
